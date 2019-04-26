@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Tetris</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <h1>Tetris Game</h1>
+    </header>
+
+    <!-- Content -->
+
+    <div class="grid">
+      <!-- Tetris board -->
+
+      <div class="game-board">
+        <div id="clock"></div>
+
+        <div id="hold-piece" class="display"></div>
+        <label id="hold-piece-label" class="label"> Hold</label>
+
+        <div id="next-piece" class="display"></div>
+        <label id="next-piece-label" class="label"> Next Piece</label>
+
+        <div id="line-destroyed" class="display"></div>
+        <label id="line-destroyed-label" class="label"> Lines Destroyed </label>
+
+        <canvas id="tetris-board" width="300" height="450"></canvas>
+      </div>
+
+      <!-- Description -->
+
+      <div class="desc-board">
+        <nav id="navbar">
+          <ul class="tabs">
+            <li data-target="#about" class="active">About</li>
+            <li data-target="#description">Description</li>
+          </ul>
+
+          <div id="about" class="text active">
+            <p>My first project using javascript to create tetris</p>
+          </div>
+
+          <div id="description" class="text">
+            <p>
+              Fill the row of the tetris game board with incoming blocks as fast
+              as possible in order to destroy as many lines as possible in 2
+              minutes
+            </p>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
